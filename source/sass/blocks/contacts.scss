@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: $color-3;
+}
+
+.contacts h2 {
+  font-family: $font-alt;
+  margin: 0 0 0 -3px;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.contacts address {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.contacts a {
+  font-size: 15px;
+  line-height: 25px;
+}

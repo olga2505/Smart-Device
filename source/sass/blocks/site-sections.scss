@@ -1,0 +1,30 @@
+.site-sections {
+  color: $color-3;
+}
+
+.site-sections h2 {
+  margin: 0 0 25px 0;
+  font-family: $font-alt;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.site-sections__list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 0 -3px;
+  padding: 0;
+  max-height: 115px;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.site-sections__item {
+  min-width: 309px;
+}
