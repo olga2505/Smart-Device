@@ -1,0 +1,118 @@
+.page-header {
+  background-color: $color-3;
+  display: flex;
+}
+
+.page-header__wrap {
+  display: flex;
+  align-items: flex-start;
+  margin: 33px auto 0 auto;
+  padding: 0 25px 20px 25px;
+  width: 1462px;
+  color: $color-1;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 17px 0 17px;
+    margin-top: 17px;
+  }
+}
+
+.page-header__logo {
+  flex-grow: 1;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 2px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 6px;
+  }
+}
+
+.page-header__call {
+  margin-left: 49px;
+  margin-top: 4px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__tel {
+  position: relative;
+  line-height: 18px;
+  margin-left: 87px;
+  padding-left: 34px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 22px;
+    margin-left: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 20px;
+    margin-left: 9px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/phone-call.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 0;
+
+    @media (max-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.page-header__mail {
+  position: relative;
+  line-height: 18px;
+  padding-left: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/envelope.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 14px;
+    left: 0;
+    top: 2px;
+
+    @media (max-width: $tablet-width) {
+      width: 25px;
+      height: 19px;
+    }
+  }
+}
+
+.page-header__mail a {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__tel a {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

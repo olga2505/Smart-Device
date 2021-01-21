@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.logo__text {
+  margin-top: 5px;
+}
+
+.logo__text-big {
+  margin: 0;
+  font-family: $font-alt;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.logo__text-small {
+  margin: 0;
+  color: $color-4;
+  font-family: $font-logo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
