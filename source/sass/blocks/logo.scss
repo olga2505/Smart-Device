@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  cursor: pointer;
 }
 
 .logo img {
@@ -18,7 +19,7 @@
 }
 
 .logo__text-big {
-  margin: 0;
+  margin: 0 0 2px 0;
   font-family: $font-alt;
   font-size: 25px;
   font-weight: 700;

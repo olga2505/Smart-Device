@@ -5,14 +5,17 @@
 
 .page-header__wrap {
   display: flex;
+  position: relative;
   align-items: flex-start;
   margin: 33px auto 0 auto;
-  padding: 0 25px 20px 25px;
-  width: 1462px;
+  padding: 0 50px 20px 50px;
+  width: 1512px;
   color: $color-1;
+  z-index: 10;
 
   @media (max-width: $tablet-width) {
     margin-top: 21px;
+    padding: 0px 23px 20px 25px;
   }
 
   @media (max-width: $mobile-width) {
@@ -42,6 +45,7 @@
 .page-header__call {
   margin-left: 49px;
   margin-top: 4px;
+  max-width: 185px;
 
   @media (max-width: $tablet-width) {
     display: none;

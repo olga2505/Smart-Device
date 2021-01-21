@@ -1,0 +1,181 @@
+.main-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: $tablet-width) {
+    overflow-y: hidden;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 670px;
+    height: 643px;
+    background-image: url("../../img/triangles.svg");
+    background-size: contain;
+    top: 119px;
+    right: 71px;
+
+    @media (max-width: $tablet-width) {
+      width: 527px;
+      height: 508px;
+      top: -25px;
+      right: -200px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 504px;
+      height: 499px;
+      top: -6px;
+      right: -335px;
+    }
+  }
+}
+
+.main-block p {
+  position: relative;
+  margin: 0 0 28px 0;
+  padding-top: 316px;
+  order: -1;
+  font-family: $font-alt;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  z-index: 10;
+
+  @media (max-width: $tablet-width) {
+    width: 340px;
+    padding-top: 202px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 326px;
+    margin-bottom: 26px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.main-block h1 {
+  position: relative;
+  width: 720px;
+  margin: 0 0 44px 0;
+  padding-left: 98px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  z-index: 10;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 50px;
+    margin-bottom: 55px;
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 280px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: $color-1;
+    left: 2px;
+    top: 16px;
+
+    @media (max-width: $tablet-width) {
+      width: 33px;
+    }
+  }
+}
+
+.main-block__consultation {
+  position: relative;
+  width: 407px;
+  height: 55px;
+  padding: 16px 45px 19px 44px;
+  margin: 0 0 131px 98px;
+  font-family: $font-alt;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: $color-2;
+  border-radius: 5px;
+  z-index: 10;
+
+  @media (max-width: $tablet-width) {
+    width: 379px;
+    margin-bottom: 164px;
+    margin-left: 50px;
+    padding: 16px 32px 19px 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 287px;
+    margin-bottom: 70px;
+    margin-left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "Получить бесплатную консультацию";
+    width: 351px;
+    height: 24px;
+
+    @media (max-width: $mobile-width) {
+      content: "Бесплатная консультация";
+      left: 34px;
+    }
+  }
+}
+
+.main-block__skroll {
+  margin: 0 0 129px -35px;
+  font-size: 14px;
+  line-height: 16px;
+  transform: rotate(270deg);
+  opacity: 0.5;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-block img {
+  position: absolute;
+  width: 705px;
+  height: 515px;
+  top: 259px;
+  right: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 260px;
+    height: 340px;
+    top: 127px;
+    right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 294px;
+    height: 220px;
+    top: 131px;
+    right: 0;
+  }
+}
