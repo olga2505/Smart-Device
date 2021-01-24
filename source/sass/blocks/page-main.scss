@@ -1,5 +1,6 @@
 .page-main {
   color: $color-1;
+  overflow: hidden;
 }
 
 .page-main__wrap {
@@ -19,5 +20,17 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 15px 0 16px;
+  }
+}
+
+.page-main__advantages {
+  margin-top: 109px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 37px;
   }
 }
