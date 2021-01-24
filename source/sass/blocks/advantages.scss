@@ -108,14 +108,15 @@
     outline: none;
   }
 
-  &--confidentiality {
-    padding: 64px 20px 24px 24px;
-  }
 
   @media (max-width: $tablet-width) {
     width: 345px;
     min-height: 232px;
     padding: 66px 20px 21px 24px;
+
+    &--confidentiality {
+      padding: 64px 20px 24px 24px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -159,12 +160,14 @@
   }
 }
 
-.advantages__item p {
-  margin: 0 0 0 0;
+.advantages__item--confidentiality h3 {
+  @media (max-width: $tablet-width) {
+    margin: 0 0 14px 0;
+  }
 }
 
-.advantages__item--confidentiality h3 {
-  margin: 0 0 14px 0;
+.advantages__item p {
+  margin: 0 0 0 0;
 }
 
 .advantages__icon {
