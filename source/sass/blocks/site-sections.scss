@@ -1,5 +1,17 @@
 .site-sections {
   color: $color-3;
+  min-width: 450px;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2px;
+  }
 }
 
 .site-sections h2 {
@@ -9,6 +21,16 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.site-sections__button {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    top: 0;
+    right: 2px;
+  }
 }
 
 .site-sections__list {
@@ -23,6 +45,13 @@
   font-size: 15px;
   line-height: 25px;
   opacity: 0.5;
+  // временно
+  // display: none;
+
+  @media (max-width: $tablet-width) {
+    max-height: none;
+    margin: 0 0 0 1px;
+  }
 }
 
 .site-sections__item {

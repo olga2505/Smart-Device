@@ -1,0 +1,31 @@
+.button-show {
+  position: absolute;
+
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 16px;
+    border: none;
+    display: block;
+    background-color: transparent;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background-color: $batton-show;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 16px;
+    left: 50%;
+    top: 0;
+    background-color: $batton-show;
+  }
+}

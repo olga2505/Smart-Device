@@ -18,3 +18,9 @@
 .social-list__item {
   margin-right: 15px;
 }
+
+.social-list__item:last-child {
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
