@@ -1,7 +1,6 @@
 .advantages {
   position: relative;
   max-width: 1270px;
-  margin: 0 auto;
   padding: 0 50px 0 50px;
   color: $color-text;
 
@@ -48,8 +47,8 @@
     padding: 0 16px 0 14px;
 
     &::after {
+      bottom: -155px;
       left: 149px;
-      top: 769px;
     }
   }
 }
@@ -143,6 +142,7 @@
   line-height: 34px;
   font-family: $font-alt;
   color: $color-2;
+  font-weight: normal;
 
   @media (max-width: $tablet-width) {
     margin: 0 0 7px 0;

@@ -1,6 +1,5 @@
 .page-main {
   color: $color-1;
-  overflow: hidden;
 }
 
 .page-main__wrap {
@@ -23,14 +22,22 @@
   }
 }
 
+.page-main__container {
+  overflow-x: hidden;
+}
+
 .page-main__advantages {
-  margin-top: 109px;
+  margin: 109px auto 76px auto;
 
   @media (max-width: $tablet-width) {
-    margin-top: 53px;
+    margin: 53px auto 24px auto;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 37px;
+    margin: 37px auto 32px auto;
   }
+}
+
+.page-main__about-company {
+  margin: 0 auto;
 }

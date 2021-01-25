@@ -1,0 +1,124 @@
+.about-company {
+  position: relative;
+  max-width: 1270px;
+  padding: 0 55px 0 230px;
+  color: $color-text;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    left: 27px;
+    top: 5px;
+    background-image: url("../../img/2005.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 561px;
+    height: 559px;
+    left: -582px;
+    top: -241px;
+    background-image: url("../../img/triangle.svg");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 63px;
+    padding: 0 19px 0 213px;
+
+    &::before {
+      width: 251px;
+      height: 361px;
+      left: 1px;
+      top: 1px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
+    padding: 0 15px 0 17px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.about-company h2 {
+  margin: 0 0 23px 0;
+  font-family: $font-alt;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 21px -3px;
+    font-size: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    margin: 0 0 14px -3px;
+  }
+}
+
+.about-company p {
+  margin: 0 0 19px 0;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 18px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 38px 0;
+  }
+}
+
+.about-company__dots {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.about-company__continuation {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about-company__button {
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  color: $color-2;
+  border: 1px solid $color-2;
+  border-radius: 5px;
+  margin: 19px 0 20px 0;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $color-2;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 23px 0 20px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: -8px 0 20px 0;
+  }
+}
