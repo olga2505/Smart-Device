@@ -90,7 +90,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 570px;
+  // width: 570px;
+  width: calc(100% / 12 * 6 - 15px);
+  // width: 50%;
   min-height: 299px;
   margin: 0 0 30px 0;
   padding: 96px 38px 25px 43px;
@@ -107,9 +109,8 @@
     outline: none;
   }
 
-
   @media (max-width: $tablet-width) {
-    width: 345px;
+    // width: 345px;
     min-height: 232px;
     padding: 66px 20px 21px 24px;
 
@@ -119,6 +120,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     padding: 71px 13px 25px 24px;
     margin: 0 0 20px 0;
 
