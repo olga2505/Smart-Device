@@ -39,6 +39,12 @@
   }
 }
 
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+
 .contacts h2 {
   font-family: $font-alt;
   margin: 0 0 23px 1px;

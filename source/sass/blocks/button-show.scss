@@ -1,3 +1,25 @@
+.button-hidden {
+  position: absolute;
+
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 1px;
+    border: none;
+    display: block;
+    background-color: transparent;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background-color: $batton-show;
+  }
+}
+
 .button-show {
   position: absolute;
 

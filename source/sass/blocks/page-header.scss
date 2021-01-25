@@ -50,6 +50,11 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
+
+  &:hover {
+    background-color: #ffffff;
+    color: $color-2;
+  }
 }
 
 .page-header__tel {
