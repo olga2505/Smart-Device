@@ -1,0 +1,132 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 10;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.form__name {
+  margin: 0;
+}
+
+.form__input {
+  width: 270px;
+  height: 50px;
+  margin: 0 0 40px 0;
+  padding: 7px 16px 7px 16px;;
+  background-color: rgba(#ffffff, 0.1);
+  border: none;
+  outline-color: #ffffff;
+  color: #ffffff;
+
+  &::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  &::-moz-placeholder {
+    color: #ffffff;
+  }
+
+  &:-moz-placeholder {
+    color: #ffffff;
+  }
+
+  &--text {
+    width: 570px;
+    height: 154px;
+    padding: 14px 16px 14px 16px;;
+    resize: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 279px;
+    height: 52px;
+    margin: 0 0 41px 0;
+
+    &--text {
+      width: 591px;
+      height: 160px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin: 0 0 29px 0;
+  }
+
+  &--text {
+    height: 104px;
+  }
+}
+
+.form__tel {
+  margin: 0;
+}
+
+.form__text {
+  margin: 0;
+}
+
+.form__button {
+  width: 270px;
+  margin: -2px 0 0 0;
+  min-height: 45px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+    margin: -1px 0 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    margin: -2px 0 26px 0;
+  }
+}
+
+.form__consent {
+  width: 262px;
+  margin: 0;
+  padding: 6px 9px 5px 33px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: $tablet-width) {
+    width: 271px;
+  }
+}
+
+.form__consent-label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: -33px;
+    border: 1px solid #ffffff;
+  }
+}
+
+.form__input-text:checked + .form__consent-label::after {
+  position: absolute;
+    content: "";
+    width: 9px;
+    height: 6px;
+    left: -29px;
+    top: 6px;
+    background-image: url("../../img/check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
