@@ -60,14 +60,11 @@
     flex-direction: column;
     align-items: center;
   }
-
-  // @media (max-width: $mobile-width) {
-  // }
 }
 
 .services__item {
   position: relative;
-  width: calc(100% / 12 * 4 - 15px);
+  width: calc(100% / 12 * 4 - 20px);
   height: 620px;
   margin: 0;
   cursor: pointer;
