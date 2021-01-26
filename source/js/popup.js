@@ -22,20 +22,13 @@
     isStorageSupport = false;
   }
 
-  if (storageName) {
-    userName.value = storageName;
-    if (storageTel) {
-      storageTel.value = storageTel;
-    } else {
-      userTel.focus();
-    }
-    userText.focus();
-  } else {
-    userName.focus();
+  function setFocus() {
+    document.getElementById('feedback-name-popup').focus();
   }
 
   buttonOpenPopup.addEventListener('click', function () {
     popup.classList.remove('popup__hidden');
+    setFocus();
   });
 
   popupClose.addEventListener('click', function () {

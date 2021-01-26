@@ -1,6 +1,1 @@
-// 'use strict';
-// var inputTel = document.querySelector('.form__input--tel');
-// var maskOptions = {
-//   mask: '+{7}(000)000-00-00'
-// };
-
+"use strict";!function(){var t=document.getElementById(".form__input--tel");IMask(t,{mask:"+{7}(000)000-00-00"})}();
