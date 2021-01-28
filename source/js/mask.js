@@ -1,12 +1,16 @@
 'use strict';
 (function () {
 
-  var inputTel = document.getElementById('.form__input--tel');
+  var inputTelPopup = document.getElementById('feedback-tel-popup');
+  var feedbackTel = document.getElementById('feedback-tel');
   var maskOptions = {
-    mask: '+{7}(000)000-00-00'
+    mask: '+{7}(000)000-00-00',
+    lazy: false
   };
-  var mask = IMask(inputTel, maskOptions);
+
+  inputTelPopup.addEventListener('click', function () {
+    var maskPopup = IMask(inputTelPopup, maskOptions);
+    var maskFeedback = IMask(feedbackTel, maskOptions);
+  });
 
 }());
-
-

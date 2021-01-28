@@ -1,1 +1,1 @@
-"use strict";!function(){var t=document.getElementById(".form__input--tel");IMask(t,{mask:"+{7}(000)000-00-00"})}();
+"use strict";!function(){var e=document.getElementById("feedback-tel-popup"),t=document.getElementById("feedback-tel"),n={mask:"+{7}(000)000-00-00",lazy:!1};e.addEventListener("click",function(){IMask(e,n),IMask(t,n)})}();
