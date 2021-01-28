@@ -20,17 +20,17 @@
   &::after {
     position: absolute;
     content: "";
-    width: 561px;
-    height: 559px;
-    left: -582px;
-    top: -241px;
-    background-image: url("../../img/triangle.svg");
+    width: 877px;
+    height: 877px;
+    left: -626px;
+    top: -402px;
+    background-image: url("../../img/triangle-2.svg");
     background-repeat: no-repeat;
-    transform: rotate(90deg);
+    background-size: contain;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 61px;
     padding: 0 19px 0 213px;
 
     &::before {
@@ -79,11 +79,17 @@
   line-height: 22px;
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 18px 0;
+    margin: 0 0 20px 0;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0 0 38px 0;
+  }
+}
+
+.about-company__span {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 

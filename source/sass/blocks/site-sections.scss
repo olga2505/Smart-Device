@@ -29,6 +29,7 @@
 
   @media (max-width: $mobile-width) {
     display: block;
+    outline-color: $color-2;
     top: 0;
     right: 2px;
   }
@@ -46,8 +47,6 @@
   font-size: 15px;
   line-height: 25px;
   opacity: 0.5;
-  // временно
-  // display: none;
 
   @media (max-width: $tablet-width) {
     max-height: none;
