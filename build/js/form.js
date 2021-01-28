@@ -1,0 +1,1 @@
+"use strict";!function(){var t=document.querySelector(".feedback"),u=t.querySelector("[name=user-name]"),r=t.querySelector("[name=user-tel]"),c=t.querySelector("[name=feedback-question]"),n=t.querySelector(".form__input-checkbox");t.addEventListener("submit",function(e){u.value&&r.value&&c.value&&n.checked?t.submit():e.preventDefault()})}();

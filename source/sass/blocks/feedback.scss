@@ -1,6 +1,27 @@
 .feedback {
   display: flex;
+  position: relative;
   background-color: $color-2;
+  background-image: url("../../img/triangles.svg"), url("../../img/paper-airplane.png");
+  background-position: 175px -60px, 350px 161px;
+  background-repeat: no-repeat;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 203px;
+    height: 203px;
+    right: 37px;
+    top: 130px;
+    background-image: url("../../img/triangle.svg");
+    transform: rotate(-30deg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .feedback__wrap {
@@ -10,12 +31,8 @@
   width: 1270px;
   margin: 0 auto;
   padding: 0 50px;
-  background-image: url("../../img/triangles.svg"), url("../../img/paper-airplane.png");
-  background-position: -150px -60px, 25px 161px;
-  background-repeat: no-repeat;
 
   @media (max-width: $tablet-width) {
-    background-image: none;
     align-items: center;
     width: 100%;
   }
@@ -41,7 +58,7 @@
 }
 
 .feedback__title {
-  margin: 90px 0 10px -3px;
+  margin: 91px 0 10px -4px;
   font-family: $font-alt;
   font-size: 36px;
   line-height: 51px;

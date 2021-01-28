@@ -89,6 +89,9 @@
 
 .about-company__dots {
   display: none;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
 
   @media (max-width: $tablet-width) {
     display: inline;

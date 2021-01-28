@@ -9,6 +9,7 @@
   var userName = popup.querySelector('[name=user-name]');
   var userTel = popup.querySelector('[name=user-tel]');
   var userText = popup.querySelector('[name=feedback-question]');
+  var checkboxPopup = popup.querySelector('.popup__consent-input');
 
   var isStorageSupport = true;
   var storageName = '';
@@ -38,7 +39,7 @@
   });
 
   form.addEventListener('submit', function (evt) {
-    if (!userName.value || !userTel.value || !userText.value) {
+    if (!userName.value || !userTel.value || !userText.value || !checkboxPopup.checked) {
       evt.preventDefault();
     } else {
       if (isStorageSupport) {
