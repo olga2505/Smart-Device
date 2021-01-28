@@ -60,7 +60,7 @@
     margin: 0 0 31px 0;
 
     &--text {
-      width: 591px;
+      width: 100%;
       height: 103px;
     }
   }
@@ -132,7 +132,7 @@
   height: 6px;
   left: -29px;
   top: 6px;
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

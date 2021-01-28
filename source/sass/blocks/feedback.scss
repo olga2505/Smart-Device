@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   background-color: $color-2;
-  background-image: url("../../img/triangles.svg"), url("../../img/paper-airplane.png");
+  background-image: url("../img/triangles.svg"), url("../img/paper-airplane.png");
   background-position: 175px -60px, 350px 161px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -14,7 +14,7 @@
     height: 203px;
     right: 37px;
     top: 130px;
-    background-image: url("../../img/triangle.svg");
+    background-image: url("../img/triangle.svg");
     transform: rotate(-30deg);
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -27,7 +27,7 @@
     height: 327px;
     right: -21px;
     top: 343px;
-    background-image: url("../../img/triangle.svg");
+    background-image: url("../img/triangle.svg");
     transform: rotate(30deg);
     background-repeat: no-repeat;
     opacity: 0.2;
