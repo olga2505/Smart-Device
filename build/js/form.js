@@ -1,1 +1,18 @@
-"use strict";!function(){var t=document.querySelector(".feedback"),u=t.querySelector("[name=user-name]"),r=t.querySelector("[name=user-tel]"),c=t.querySelector("[name=feedback-question]"),n=t.querySelector(".form__input-checkbox");t.addEventListener("submit",function(e){u.value&&r.value&&c.value&&n.checked?t.submit():e.preventDefault()})}();
+'use strict';
+
+(function () {
+  var form = document.querySelector('.feedback');
+  var userName = form.querySelector('[name=user-name]');
+  var userTel = form.querySelector('[name=user-tel]');
+  var userText = form.querySelector('[name=feedback-question]');
+  var checkboxPopup = form.querySelector('.form__input-checkbox');
+
+  form.addEventListener('submit', function (evt) {
+    if (!userName.value || !userTel.value || !userText.value || !checkboxPopup.checked) {
+      evt.preventDefault();
+    } else {
+      form.submit();
+    }
+  });
+
+})();

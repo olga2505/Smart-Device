@@ -1,1 +1,65 @@
-"use strict";!function(){var e=document.querySelector(".page-header__call"),t=document.querySelector(".popup"),u=document.querySelector(".popup__close"),o=document.querySelector(".popup__form"),c=t.querySelector("[name=user-name]"),a=t.querySelector("[name=user-tel]"),n=t.querySelector("[name=feedback-question]"),r=t.querySelector(".popup__consent-input"),l=!0,s="",d="";try{s=localStorage.getItem("userName"),d=localStorage.getItem("userTel")}catch(e){l=!1}e.addEventListener("click",function(){t.classList.remove("popup__hidden"),s?(c.value=s,d?a.value=d:a.focus(),n.focus()):c.focus()}),o.addEventListener("submit",function(e){c.value&&a.value&&n.value&&r.checked?l&&(localStorage.setItem("userName",c.value),localStorage.setItem("userTel",a.value)):e.preventDefault()}),u.addEventListener("click",function(){t.classList.add("popup__hidden")}),window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),t.classList.contains("popup__hidden")||t.classList.add("popup__hidden"))})}();
+'use strict';
+
+(function () {
+  var buttonOpenPopup = document.querySelector('.page-header__call');
+  var popup = document.querySelector('.popup');
+  var popupClose = document.querySelector('.popup__close');
+  var form = document.querySelector('.popup__form');
+
+  var userName = popup.querySelector('[name=user-name]');
+  var userTel = popup.querySelector('[name=user-tel]');
+  var userText = popup.querySelector('[name=feedback-question]');
+  var checkboxPopup = popup.querySelector('.popup__consent-input');
+
+  var isStorageSupport = true;
+  var storageName = '';
+  var storageTel = '';
+
+  try {
+    storageName = localStorage.getItem('userName');
+    storageTel = localStorage.getItem('userTel');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  buttonOpenPopup.addEventListener('click', function () {
+    popup.classList.remove('popup__hidden');
+
+    if (storageName) {
+      userName.value = storageName;
+      if (storageTel) {
+        userTel.value = storageTel;
+      } else {
+        userTel.focus();
+      }
+      userText.focus();
+    } else {
+      userName.focus();
+    }
+  });
+
+  form.addEventListener('submit', function (evt) {
+    if (!userName.value || !userTel.value || !userText.value || !checkboxPopup.checked) {
+      evt.preventDefault();
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem('userName', userName.value);
+        localStorage.setItem('userTel', userTel.value);
+      }
+    }
+  });
+
+  popupClose.addEventListener('click', function () {
+    popup.classList.add('popup__hidden');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (!popup.classList.contains('popup__hidden')) {
+        popup.classList.add('popup__hidden');
+      }
+    }
+  });
+
+})();

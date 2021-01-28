@@ -1,1 +1,26 @@
-"use strict";!function(){var e=document.querySelector(".main-block__skroll"),o=document.querySelector(".advantages"),t=document.querySelector(".main-block__consultation"),n=document.querySelector(".page-main__feedback");function c(e){window.scroll({left:0,top:e.offsetTop,behavior:"smooth"})}e.addEventListener("click",function(){c(o)}),t.addEventListener("click",function(){c(n)})}();
+'use strict';
+
+(function () {
+  var buttonAdvantages = document.querySelector('.main-block__skroll');
+  var blockAdvantages = document.querySelector('.advantages');
+
+  var buttonConsultation = document.querySelector('.main-block__consultation');
+  var blockConsultation = document.querySelector('.page-main__feedback');
+
+
+  function scrollTo(element) {
+    window.scroll({
+      left: 0,
+      top: element.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+
+  buttonAdvantages.addEventListener('click', function () {
+    scrollTo(blockAdvantages);
+  });
+
+  buttonConsultation.addEventListener('click', function () {
+    scrollTo(blockConsultation);
+  });
+})();
