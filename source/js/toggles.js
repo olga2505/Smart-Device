@@ -1,7 +1,8 @@
 'use strict';
 
 (function () {
-  var buttonSections = document.querySelector('.site-sections__button');
+  // var buttonSections = document.querySelector('.site-sections__button');
+  var buttonSections = document.querySelector('.page-footer__site-sections h3');
   var siteSectionsList = document.querySelector('.site-sections__list');
   var buttonContacts = document.querySelector('.contacts__button');
   var contactsBlock = document.querySelector('.contacts__block');
