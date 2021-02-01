@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
   background-color: $color-2;
-  background-image: url("../img/triangles.svg"), url("../img/paper-airplane.png");
-  background-position: 175px -60px, 350px 161px;
+  background-image: url("../img/paper-airplane.png"), url("../img/triangles.svg");
+  background-position: 350px 161px, 175px -60px;
   background-repeat: no-repeat;
   overflow: hidden;
 

@@ -957,9 +957,19 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .site-sections h2 {
+      position: relative;
+      margin: 0;
+      width: 100%;
+      height: 50px;
+      outline-color: #c4c4c4;
+      z-index: 10;
+      cursor: pointer; } }
 
 .site-sections__button {
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .site-sections__button {
       display: block;
@@ -1043,6 +1053,9 @@ input[type="radio"].visually-hidden {
           -ms-flex-direction: column;
               flex-direction: column;
       padding: 0 80px 0 0; } }
+  @media (max-width: 767px) {
+    .contacts__wrap {
+      padding: 0; } }
 
 .contacts__block {
   display: -webkit-box;
@@ -1067,8 +1080,14 @@ input[type="radio"].visually-hidden {
       margin-bottom: 25px; } }
   @media (max-width: 767px) {
     .contacts h2 {
-      padding-top: 29px;
-      margin: 0 0 32px 0; } }
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 14px 0 9px;
+      padding: 15px 0 0 0;
+      outline-color: #c4c4c4;
+      z-index: 10;
+      cursor: pointer; } }
 
 .contacts__button {
   display: none; }
@@ -1621,7 +1640,6 @@ input[type="radio"].visually-hidden {
   margin: 0; }
 
 .form__field {
-  margin: 0;
   margin: 0 0 40px 0; }
   @media (max-width: 1023px) {
     .form__field {
