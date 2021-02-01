@@ -609,6 +609,45 @@ input[type="radio"].visually-hidden {
 .advantages__item p {
   margin: 0 0 0 0; }
 
+.advantages__icon {
+  position: absolute;
+  top: 39px;
+  left: 42px;
+  fill: #00b2ff; }
+  .advantages__icon--timing {
+    width: 29px;
+    height: 36px; }
+  .advantages__icon--suppliers {
+    width: 35px;
+    height: 35px; }
+  .advantages__icon--confidentiality {
+    top: 43px;
+    width: 36px;
+    height: 31px; }
+  .advantages__icon--cost {
+    width: 35px;
+    height: 35px; }
+  @media (max-width: 1023px) {
+    .advantages__icon {
+      margin: 0 0 7px 0;
+      top: 23px;
+      left: 26px; }
+      .advantages__icon--suppliers {
+        width: 32px;
+        height: 32px; }
+      .advantages__icon--confidentiality {
+        width: 30px;
+        height: 26px;
+        top: 27px;
+        left: 25px; }
+      .advantages__icon--cost {
+        width: 32px;
+        height: 32px; } }
+  @media (max-width: 767px) {
+    .advantages__icon {
+      top: 24px;
+      left: 25px; } }
+
 .advantages__item:hover .advantages__title,
 .advantages__item:focus .advantages__title {
   color: #ffffff;
@@ -904,7 +943,7 @@ input[type="radio"].visually-hidden {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 29px;
+      margin-bottom: 10px;
       padding-bottom: 49px; }
       .page-footer__block::before {
         position: absolute;
@@ -960,7 +999,8 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .site-sections h2 {
       position: relative;
-      margin: 0;
+      margin: 5px 0 5px 0;
+      padding: 14px 0 0 0;
       width: 100%;
       height: 50px;
       outline-color: #c4c4c4;
@@ -974,7 +1014,7 @@ input[type="radio"].visually-hidden {
     .site-sections__button {
       display: block;
       outline-color: #00b2ff;
-      top: 0;
+      top: 19px;
       right: 2px; } }
 
 .site-sections__list {
@@ -1083,7 +1123,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       width: 100%;
       height: 50px;
-      margin: 14px 0 9px;
+      margin: 14px 0 12px;
       padding: 15px 0 0 0;
       outline-color: #c4c4c4;
       z-index: 10;
@@ -1516,8 +1556,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   position: relative;
   background-color: #00b2ff;
-  background-image: url("../img/triangles.svg"), url("../img/paper-airplane.png");
-  background-position: 175px -60px, 350px 161px;
+  background-image: url("../img/paper-airplane.png"), url("../img/triangles.svg");
+  background-position: 350px 161px, 175px -60px;
   background-repeat: no-repeat;
   overflow: hidden; }
   .feedback::before {
@@ -1776,7 +1816,8 @@ input[type="radio"].visually-hidden {
   .form-show {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    width: 214px; } }
 
 .popup {
   position: absolute;
