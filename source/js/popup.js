@@ -14,10 +14,12 @@
   var isStorageSupport = true;
   var storageName = '';
   var storageTel = '';
+  var storageMessage = '';
 
   try {
     storageName = localStorage.getItem('userName');
     storageTel = localStorage.getItem('userTel');
+    storageMessage = localStorage.getItem('userText');
   } catch (err) {
     isStorageSupport = false;
   }
@@ -29,6 +31,7 @@
       userName.value = storageName;
       if (storageTel) {
         userTel.value = storageTel;
+        userText.value = storageMessage;
       } else {
         userTel.focus();
       }
@@ -45,6 +48,7 @@
       if (isStorageSupport) {
         localStorage.setItem('userName', userName.value);
         localStorage.setItem('userTel', userTel.value);
+        localStorage.setItem('userText', userText.value);
       }
     }
   });

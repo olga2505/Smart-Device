@@ -15,10 +15,21 @@
   margin: 0;
 }
 
-.form__input {
+.form__field {
+  margin: 0 0 40px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 41px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 31px 0;
+  }
+}
+
+.form__field input {
   width: 270px;
   height: 50px;
-  margin: 0 0 40px 0;
   padding: 6px 16px 10px 16px;
   background-color: rgba(#ffffff, 0.1);
   border: none;
@@ -47,7 +58,7 @@
   @media (max-width: $tablet-width) {
     width: 279px;
     height: 52px;
-    margin: 0 0 41px 0;
+    margin: 0 0 0 0;
 
     &--text {
       width: 591px;
@@ -57,12 +68,48 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin: 0 0 31px 0;
+    margin: 0 0 0 0;
 
     &--text {
       width: 100%;
       height: 103px;
     }
+  }
+}
+
+.form__field textarea {
+  width: 570px;
+  height: 154px;
+  margin: 0 0 0 0;
+  background-color: rgba(#ffffff, 0.1);
+  padding: 14px 16px 14px 16px;
+  border: none;
+  outline-color: #ffffff;
+  color: #ffffff;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  &::-moz-placeholder {
+    color: #ffffff;
+  }
+
+  &:-moz-placeholder {
+    color: #ffffff;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 0 0;
+    width: 591px;
+    height: 160px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 103px;
+    margin: 0 0 0 0;
   }
 }
 

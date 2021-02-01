@@ -73,9 +73,19 @@
           <a class="main-block__consultation" aria-label="Получить бесплатную консультацию"></a>
           <a class="main-block__scroll">Скролл вниз</a>
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/product-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/product-tablet.png">
-            <img src="img/product-mobile.png" width="301" height="220" alt="Печатная плата">
+            <!-- 1x: 301*220px; 2x: 602*440px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/product-mobile@1x.webp 1x, img/product-mobile@2x.webp 2x">
+            <!-- 1x: 260*340px; 2x: 520*680px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/product-tablet@1x.webp 1x, img/product-tablet@2x.webp 2x">
+            <!-- 1x: 705*515px; 2x: 1410*1030px -->
+            <source type="image/webp" srcset="img/product-desktop@1x.webp, img/product-desktop@2x.webp 2x">
+
+            <!-- 1x: 301*220px; 2x: 602*440px -->
+            <source media="(max-width: 767px)" srcset="img/product-mobile@1x.png 1x, img/product-mobile@2x.png 2x">
+              <!-- 1x: 260*340px; 2x: 520*680px -->
+            <source media="(max-width: 1023px)" srcset="img/product-tablet@1x.png 1x, img/product-tablet@2x.png 2x">
+                <!-- 1x: 705*515px; 2x: 1410*1030px -->
+            <img src="img/product-desktop@1x.png" srcset="img/product-desktop@2x.png 2x" alt="Печатная плата">
           </picture>
         </div>
       </div>
@@ -84,32 +94,32 @@
           <h2 class="visually-hidden">Преимушества нашей компании</h2>
           <ul class="advantages__list">
             <li class="advantages__item" tabindex="0">
-              <h3>Оперативные сроки </h3>
+              <h3 class="advantages__title">Оперативные сроки </h3>
               <svg class="advantages__icon advantages__icon--timing" width="29" height="35">
-                <use xlink:href="#icon-stopwatch"></use>
+                <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
               </svg>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
             <li class="advantages__item advantages__item--suppliers" tabindex="0">
-              <h3>Крупные поставщики</h3>
+              <h3 class="advantages__title">Крупные поставщики</h3>
               <svg class="advantages__icon advantages__icon--suppliers" width="35" height="35">
-                <use xlink:href="#icon-hired"></use>
+                <use xlink:href="img/sprite_auto.svg#icon-hired"></use>
               </svg>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </li>
             <li class="advantages__item advantages__item--confidentiality" tabindex="0">
-              <h3>Полная конфиденциальность</h3>
+              <h3 class="advantages__title">Полная конфиденциальность</h3>
               <svg class="advantages__icon advantages__icon--confidentiality" width="36" height="31">
-                <use xlink:href="#icon-detective"></use>
+                <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
               </svg>
               <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
               </p>
             </li>
             <li class="advantages__item advantages__item--cost" tabindex="0">
-              <h3>Персонализация стоимости</h3>
+              <h3 class="advantages__title">Персонализация стоимости</h3>
               <svg class="advantages__icon advantages__icon--cost" width="35" height="35">
-                <use xlink:href="#icon-tag"></use>
+                <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
               </svg>
               <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
@@ -145,17 +155,17 @@
             <p class="feedback__title">Остались вопросы? Задайте их нам!</p>
             <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
             <form class="feedback__form form" method="post" action="https://echo.htmlacademy.ru">
-              <p class="form__name">
+              <p class="form__field form__field--name">
                 <label class="visually-hidden" for="feedback-name">Имя</label>
-                <input class="form__input form__input--name" id="feedback-name" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
+                <input id="feedback-name" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
               </p>
-              <p class="form__tel">
+              <p class="form__field form__field--tel">
                 <label class="visually-hidden" for="feedback-tel">Телефон</label>
-                <input class="form__input form__input--tel" id="feedback-tel" type="tel" name="user-tel" placeholder="Телефон">
+                <input id="feedback-tel" type="tel" name="user-tel" placeholder="Телефон">
               </p>
-              <p class="form__text">
+              <p class="form__field form__field--text">
                 <label class="visually-hidden" for="feedback-text">Ваш вопрос</label>
-                <textarea class="form__input form__input--text" id="feedback-text" name="feedback-question" placeholder="Ваш вопрос"></textarea>
+                <textarea id="feedback-text" name="feedback-question" placeholder="Ваш вопрос"></textarea>
               </p>
               <button class="form__button button" type="submit">Задать вопрос</button>
               <p class="form__consent">
@@ -182,28 +192,28 @@
               <li class="social-list__item social-list__item--fb">
                 <a href="#" aria-label="Наш Фейсбук">
                   <svg class="social-list__link social-list__link--fb" width="27" height="27">
-                    <use xlink:href="#icon-fb"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list__item social-list__item--ok">
                 <a href="#" aria-label="Наш Фейсбук">
                   <svg class="social-list__link social-list__link--ok" width="27" height="27">
-                    <use xlink:href="#icon-ok"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list__item social-list__item--vk">
                 <a href="#" aria-label="Наш Фейсбук">
                   <svg class="social-list__link social-list__link--vk" width="27" height="27">
-                    <use xlink:href="#icon-vk"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__site-sections site-sections">
-            <h2 class="qwer" tabindex="1">Разделы сайта</h2>
+            <h2>Разделы сайта</h2>
             <button class="site-sections__button button-show" aria-label="Показать разделы сайта"></button>
             <ul class="site-sections__list form-hidden">
               <li class="site-sections__item">
@@ -235,9 +245,9 @@
               <button class="contacts__button button-show" aria-label="Показать контакты"></button>
               <div class="contacts__block form-hidden">
                 <address>г. Мытищи, Олимпийский проспект, д.10</address>
-                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-                <a href="tel:+79250038767">+7 (925) 003-87-67</a>
-                <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+                <a class="" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                <a class="" href="tel:+79250038767">+7 (925) 003-87-67</a>
+                <a class="" href="tel:+792692608079">+7 (926) 926-080-79</a>
               </div>
             </div>
             </div>
@@ -258,17 +268,17 @@
         <p class="popup__title">Закажите звонок</p>
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="form__name">
+          <p class="form__field form__field--name popup__field">
             <label class="visually-hidden" for="feedback-name-popup">Имя</label>
-            <input class="form__input form__input--name popup__input" id="feedback-name-popup" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
+            <input id="feedback-name-popup" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
           </p>
-          <p class="form__tel">
+          <p class="form__field form__field--tel popup__field">
             <label class="visually-hidden" for="feedback-tel-popup">Телефон</label>
-            <input class="form__input form__input--tel popup__input" id="feedback-tel-popup" type="tel" name="user-tel" placeholder="Телефон">
+            <input id="feedback-tel-popup" type="tel" name="user-tel" placeholder="Телефон">
           </p>
-          <p class="form__text">
+          <p class="form__field form__field--text popup__field">
             <label class="visually-hidden" for="feedback-text-popup">Ваш вопрос</label>
-            <textarea class="form__input form__input--text popup__input popup__input--text" id="feedback-text-popup" name="feedback-question" placeholder="Ваш вопрос"></textarea>
+            <textarea id="feedback-text-popup" name="feedback-question" placeholder="Ваш вопрос"></textarea>
           </p>
           <button class="form__button button popup__button" type="submit">Отправить</button>
           <p class="form__consent popup__consent">
@@ -280,10 +290,11 @@
       </div>
     </div>
     <script src="https://unpkg.com/imask"></script>
-    <script src="js/mask.js"></script>
+    <!-- <script src="js/mask.js"></script>
     <script src="js/sсroll.js"></script>
     <script src="js/toggles.js"></script>
     <script src="js/popup.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/form.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
