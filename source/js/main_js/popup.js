@@ -5,6 +5,7 @@
   var popup = document.querySelector('.popup');
   var popupClose = document.querySelector('.popup__close');
   var form = document.querySelector('.popup__form');
+  var overlay = document.querySelector('.overlay');
 
   var userName = popup.querySelector('[name=user-name]');
   var userTel = popup.querySelector('[name=user-tel]');
@@ -26,6 +27,7 @@
 
   buttonOpenPopup.addEventListener('click', function () {
     popup.classList.remove('popup__hidden');
+    overlay.classList.remove('overlay__hidden');
 
     if (storageName) {
       userName.value = storageName;
@@ -53,17 +55,28 @@
     }
   });
 
-  popupClose.addEventListener('click', function () {
+  var closeModal = function () {
     popup.classList.add('popup__hidden');
+    overlay.classList.add('overlay__hidden');
+  };
+
+  popupClose.addEventListener('click', function () {
+    closeModal();
+
   });
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (!popup.classList.contains('popup__hidden')) {
-        popup.classList.add('popup__hidden');
+        closeModal();
       }
     }
   });
 
+  if (popup.classList.contains('popup__hidden')) {
+    overlay.addEventListener('click', function () {
+      closeModal();
+    });
+  }
 })();

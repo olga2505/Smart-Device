@@ -59,7 +59,7 @@
 
 .popup__button {
   width: 100%;
-  margin: 26px 0 29px 0;
+  margin: -5px 0 29px 0;
 
   &:hover {
     background-color: #ffffff;
@@ -72,7 +72,7 @@
   padding: 5px 12px 6px 49px;
 }
 
-.popup__consent-checkbox {
+.popup__consent label {
   color: #ffffff;
 
   &::before {
@@ -80,7 +80,7 @@
   }
 }
 
-.popup__consent-input:checked + .popup__consent-checkbox::after {
+.popup__consent input:checked + label::after {
   left: -45px;
 }
 

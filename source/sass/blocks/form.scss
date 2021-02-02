@@ -158,7 +158,7 @@
   }
 }
 
-.form__consent-label {
+.form__consent label {
   position: relative;
   cursor: pointer;
 
@@ -172,7 +172,7 @@
   }
 }
 
-.form__input-text:checked + .form__consent-label::after {
+.form__consent input:checked + label::after {
   position: absolute;
   content: "";
   width: 9px;
