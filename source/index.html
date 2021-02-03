@@ -41,11 +41,11 @@
           <a class="main-block__scroll">Скролл вниз</a>
           <picture>
             <!-- 1x: 301*220px; 2x: 602*440px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/product-mobile@1x.webp 1x, img/product-mobile@2x.webp 2x"></source>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/product-mobile@1x.webp 1x, img/product-mobile@2x.webp 2x">
             <!-- 1x: 260*340px; 2x: 520*680px -->
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/product-tablet@1x.webp 1x, img/product-tablet@2x.webp 2x"></source>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/product-tablet@1x.webp 1x, img/product-tablet@2x.webp 2x">
             <!-- 1x: 705*515px; 2x: 1410*1030px -->
-            <source type="image/webp" srcset="img/product-desktop@1x.webp, img/product-desktop@2x.webp 2x"></source>
+            <source type="image/webp" srcset="img/product-desktop@1x.webp, img/product-desktop@2x.webp 2x">
 
             <!-- 1x: 301*220px; 2x: 602*440px -->
             <source media="(max-width: 767px)" srcset="img/product-mobile@1x.png 1x, img/product-mobile@2x.png 2x">
@@ -132,7 +132,7 @@
               </p>
               <p class="form__field form__field--text">
                 <label class="visually-hidden" for="feedback-text">Ваш вопрос</label>
-                <textarea id="feedback-text"name="feedback-question" placeholder="Ваш вопрос"></textarea>
+                <textarea id="feedback-text" name="feedback-question" placeholder="Ваш вопрос"></textarea>
               </p>
               <button class="form__button button" type="submit">Задать вопрос</button>
               <p class="form__consent">
@@ -234,7 +234,7 @@
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="popup__title">Закажите звонок</p>
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="popup__form form" method="post" action="https://echo.htmlacademy.ru">
           <p class="form__field form__field--name popup__field">
             <label class="visually-hidden" for="feedback-name-popup">Имя</label>
             <input id="feedback-name-popup" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
