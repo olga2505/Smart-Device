@@ -3,9 +3,7 @@
   position: relative;
   background-color: $color-2;
   background-image: url("../img/triangles.svg");
-  // background-image: url("../img/paper-airplane.png"), url("../img/triangles.svg");
   background-position: 175px -60px;
-  // background-position: 350px 161px, 175px -60px;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -66,17 +64,17 @@
 }
 
 .feedback__background {
-    width: 50%;
-    height: 100%;
-    margin: 0 115px 0 26px;
-    background-image: url("../img/paper-airplane.png");
-    background-repeat: no-repeat;
-    background-position: 0 161px;
-    background-size: contain;
+  width: 50%;
+  height: 100%;
+  margin: 0 115px 0 26px;
+  background-image: url("../img/paper-airplane.png");
+  background-repeat: no-repeat;
+  background-position: 0 161px;
+  background-size: contain;
 
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .feedback__container {
