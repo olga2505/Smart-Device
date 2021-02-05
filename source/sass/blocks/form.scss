@@ -143,6 +143,7 @@
   @media (max-width: $mobile-width) {
     width: 290px;
     margin: -7px 0 26px 0;
+    align-self: center;
   }
 }
 
@@ -155,6 +156,11 @@
 
   @media (max-width: $tablet-width) {
     width: 271px;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+    margin: 0 0 0 -17px;
   }
 }
 

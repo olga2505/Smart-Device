@@ -559,7 +559,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
-  cursor: pointer;
   z-index: 10; }
   .advantages__item:hover, .advantages__item:focus {
     color: #ffffff;
@@ -805,7 +804,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #00b2ff;
   border-radius: 5px;
-  z-index: 10; }
+  z-index: 10;
+  cursor: pointer; }
   .main-block__consultation:hover {
     background-color: #ffffff;
     color: #00b2ff; }
@@ -1774,7 +1774,9 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .form__button {
       width: 290px;
-      margin: -7px 0 26px 0; } }
+      margin: -7px 0 26px 0;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 .form__consent {
   width: 262px;
@@ -1784,7 +1786,9 @@ input[type="radio"].visually-hidden {
   line-height: 16px; }
   @media (max-width: 1023px) {
     .form__consent {
-      width: 271px; } }
+      width: 271px;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 .form__consent label {
   position: relative;

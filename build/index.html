@@ -37,8 +37,8 @@
         <div class="page-main__main-block main-block">
           <h1>производство и монтаж, поставка комплектующих, блоков и модулей</h1>
           <p>Печатные платы</p>
-          <a class="main-block__consultation" aria-label="Получить бесплатную консультацию"></a>
-          <a class="main-block__scroll">Скролл вниз</a>
+          <a class="main-block__consultation" tabindex="0" aria-label="Получить бесплатную консультацию"></a>
+          <a class="main-block__scroll" tabindex="0">Скролл вниз</a>
           <picture>
             <!-- 1x: 301*220px; 2x: 602*440px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/product-mobile@1x.webp 1x, img/product-mobile@2x.webp 2x">
@@ -60,14 +60,14 @@
         <section class="page-main__advantages advantages">
           <h2 class="visually-hidden">Преимушества нашей компании</h2>
           <ul class="advantages__list">
-            <li class="advantages__item" tabindex="0">
+            <li class="advantages__item">
               <h3>Оперативные сроки </h3>
               <svg class="advantages__icon advantages__icon--timing" width="29" height="35">
                 <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
               </svg>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
-            <li class="advantages__item advantages__item--suppliers" tabindex="0">
+            <li class="advantages__item advantages__item--suppliers">
               <h3>Крупные поставщики</h3>
               <svg class="advantages__icon advantages__icon--suppliers" width="35" height="35">
                 <use xlink:href="img/sprite_auto.svg#icon-hired"></use>
@@ -75,7 +75,7 @@
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </li>
-            <li class="advantages__item advantages__item--confidentiality" tabindex="0">
+            <li class="advantages__item advantages__item--confidentiality">
               <h3>Полная конфиденциальность</h3>
               <svg class="advantages__icon advantages__icon--confidentiality" width="36" height="31">
                 <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
@@ -83,7 +83,7 @@
               <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
               </p>
             </li>
-            <li class="advantages__item advantages__item--cost" tabindex="0">
+            <li class="advantages__item advantages__item--cost">
               <h3>Персонализация стоимости</h3>
               <svg class="advantages__icon advantages__icon--cost" width="35" height="35">
                 <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
@@ -117,6 +117,7 @@
       </section>
       <section class="page-main__feedback feedback">
         <div class="feedback__wrap">
+          <div class="feedback__background"></div>
           <div class="feedback__container">
             <h2 class="visually-hidden">Обратная связь</h2>
             <p class="feedback__title">Остались вопросы? Задайте их нам!</p>

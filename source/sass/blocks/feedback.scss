@@ -2,8 +2,10 @@
   display: flex;
   position: relative;
   background-color: $color-2;
-  background-image: url("../img/paper-airplane.png"), url("../img/triangles.svg");
-  background-position: 350px 161px, 175px -60px;
+  background-image: url("../img/triangles.svg");
+  // background-image: url("../img/paper-airplane.png"), url("../img/triangles.svg");
+  background-position: 175px -60px;
+  // background-position: 350px 161px, 175px -60px;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -35,6 +37,7 @@
 
   @media (max-width: $tablet-width) {
     background-image: none;
+    // padding: 0 85px 0 85px;
 
     &::before,
     &::after {
@@ -45,15 +48,17 @@
 
 .feedback__wrap {
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
   width: 1270px;
   margin: 0 auto;
-  padding: 0 50px;
 
   @media (max-width: $tablet-width) {
-    align-items: center;
     width: 100%;
+    padding: 0 85px 0 85px;
+    align-items: center;
+    justify-content: center;
+
   }
 
   @media (max-width: $mobile-width) {
@@ -61,11 +66,24 @@
   }
 }
 
+.feedback__background {
+    width: 50%;
+    height: 100%;
+    margin: 0 115px 0 26px;
+    background-image: url("../img/paper-airplane.png");
+    background-repeat: no-repeat;
+    background-position: 0 161px;
+    background-size: contain;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+}
+
 .feedback__container {
   position: relative;
   width: 570px;
-  margin: 0 0 112px 0;
-  background-color: $color-2;
+  margin: 0 50px 112px 0;
   z-index: 5;
 
   @media (max-width: $tablet-width) {
