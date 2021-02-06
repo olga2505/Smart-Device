@@ -338,6 +338,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -717,14 +719,15 @@ input[type="radio"].visually-hidden {
           align-items: flex-start; }
   @media (max-width: 1023px) {
     .main-block__container-text {
-      margin: 0px -20px 0 0;
+      margin: 0 -20px 0 0;
       z-index: 15;
       -ms-flex-negative: 0;
           flex-shrink: 0; } }
   @media (max-width: 767px) {
     .main-block__container-text {
       -ms-flex-negative: 1;
-          flex-shrink: 1; }
+          flex-shrink: 1;
+      margin: 0 auto; }
       .main-block__container-text::before {
         position: absolute;
         content: "";
@@ -825,7 +828,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .main-block__consultation {
       width: 287px;
-      margin: 0 auto 70px auto; } }
+      margin: 0 0 70px 0; } }
   .main-block__consultation::before {
     position: absolute;
     content: "Получить бесплатную консультацию";
@@ -872,9 +875,10 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .main-block__container-img {
       position: absolute;
-      width: 100%;
       margin: 0;
-      padding: 0 0 0 14px; }
+      padding: 0 0 0 14px;
+      right: 0;
+      z-index: 16; }
       .main-block__container-img::before {
         display: none; } }
 
