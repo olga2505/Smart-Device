@@ -68,4 +68,9 @@
 
 .site-sections__item {
   min-width: 309px;
+
+  &:hover,
+  &:active {
+    color: $color-2;
+  }
 }

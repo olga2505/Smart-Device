@@ -64,6 +64,10 @@
   margin-left: 94px;
   z-index: 20;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     padding-left: 22px;
     margin-left: 19px;
@@ -78,6 +82,10 @@
 .page-header__mail {
   position: relative;
   z-index: 20;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .page-header__mail span {

@@ -72,6 +72,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+
   &--production {
     // 1x: 370*620px
     background-image: url("../img/photo-1-desktop@1x.png");

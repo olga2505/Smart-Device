@@ -49,6 +49,11 @@
   margin-bottom: 26px;
 }
 
+.contacts__block a:hover,
+.contacts__block a:active {
+  color: $color-2;
+}
+
 .contacts h2 {
   font-family: $font-alt;
   margin: 0 0 25px 1px;

@@ -122,7 +122,8 @@
   z-index: 10;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: #ffffff;
     color: $color-2;
   }
@@ -159,6 +160,11 @@
   transform: rotate(270deg);
   opacity: 0.5;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
