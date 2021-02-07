@@ -26,13 +26,13 @@
     &::before {
       position: absolute;
       content: "";
-      width: 509px;
-      height: 506px;
+      width: 457px;
+      height: 476px;
       background-image: url("../img/triangles.svg");
       background-size: contain;
       background-repeat: no-repeat;
-      top: -120px;
-      right: -355px;
+      top: -2px;
+      right: -320px;
     }
   }
 }
@@ -171,13 +171,13 @@
   &::before {
     position: absolute;
     content: "";
-    width: 670px;
-    height: 643px;
+    width: 610px;
+    height: 617px;
     background-image: url("../img/triangles.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 119px;
-    right: 71px;
+    top: 273px;
+    right: 110px;
   }
 
   @media (max-width: $tablet-width) {
@@ -185,10 +185,10 @@
     margin: 0 0 0 -4px;
 
     &::before {
-      width: 527px;
-      height: 508px;
-      top: -24px;
-      right: -198px;
+      width: 480px;
+      height: 471px;
+      top: 95px;
+      right: -169px;
     }
   }
 
