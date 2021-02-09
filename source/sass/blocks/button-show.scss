@@ -1,5 +1,6 @@
 .button-hidden {
   position: absolute;
+  padding: 0;
 
   @media (max-width: $mobile-width) {
     width: 16px;
@@ -32,6 +33,7 @@
 
 .button-show {
   position: absolute;
+  padding: 0;
 
   @media (max-width: $mobile-width) {
     width: 16px;

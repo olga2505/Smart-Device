@@ -31,22 +31,23 @@
 .page-header__nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 756px;
   margin-right: 2px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 11px;
+    margin-top: 0;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 6px;
+    margin-top: -10px;
   }
 }
 
 .page-header__call {
-  margin-left: 49px;
-  margin-top: 4px;
   max-width: 185px;
+  margin: 4px 0 20px 49px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -61,7 +62,7 @@
 .page-header__tel {
   position: relative;
   line-height: 18px;
-  margin-left: 94px;
+  margin: 15px 0 0 94px;
   z-index: 20;
 
   &:hover {
@@ -81,6 +82,7 @@
 
 .page-header__mail {
   position: relative;
+  margin: 15px 0 0 94px;
   z-index: 20;
 
   &:hover {

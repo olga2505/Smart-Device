@@ -25,12 +25,7 @@
     if (storageTel) {
       userTel.value = storageTel;
       userText.value = storageMessage;
-    } else {
-      userTel.focus();
     }
-    userText.focus();
-  } else {
-    userName.focus();
   }
 
   formFeedback.addEventListener('submit', function (evt) {

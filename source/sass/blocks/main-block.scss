@@ -21,18 +21,18 @@
 
   @media (max-width: $mobile-width) {
     flex-shrink: 1;
-    margin: 114px auto 0 auto;
+    margin: 264px auto 0 auto;
 
     &::before {
       position: absolute;
       content: "";
-      width: 457px;
+      width: 460px;
       height: 476px;
       background-image: url("../img/triangles.svg");
       background-size: contain;
       background-repeat: no-repeat;
-      top: -2px;
-      right: -320px;
+      top: 156px;
+      right: -323px;
     }
   }
 }
@@ -40,7 +40,7 @@
 .main-block__container-text p {
   position: relative;
   margin: 0 0 28px 0;
-  padding-top: 316px;
+  padding-top: 449px;
   order: -1;
   font-family: $font-alt;
   font-size: 80px;
@@ -52,14 +52,14 @@
 
   @media (max-width: $tablet-width) {
     width: 340px;
-    padding-top: 201px;
+    padding-top: 353px;
     font-size: 60px;
     line-height: 70px;
   }
 
   @media (max-width: $mobile-width) {
     width: auto;
-    margin: 212px 0 26px 0;
+    margin: 223px 0 26px 0;
     padding: 0;
     font-size: 40px;
     line-height: 47px;
@@ -182,7 +182,7 @@
     background-image: url("../img/triangles.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 273px;
+    top: 406px;
     right: 110px;
   }
 
@@ -193,17 +193,17 @@
     &::before {
       width: 480px;
       height: 471px;
-      top: 95px;
+      top: 245px;
       right: -169px;
     }
   }
 
   @media (max-width: $mobile-width) {
     position: absolute;
-    margin: 103px 0 0 0;
+    margin: 262px 0 0 0;
     padding: 0 0 0 14px;
     right: 0;
-    z-index: 16;
+    z-index: 14;
 
     &::before {
       display: none;
@@ -215,15 +215,14 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding: 260px 29px 0 0;
-  // z-index: 10;
+  padding: 393px 29px 0 0;
 
   @media (max-width: $tablet-width) {
-    padding: 127px 0 0 0;
+    padding: 277px 0 0 0;
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
+    width: 293px;
     margin: 30px 0 0 0;
     padding: 0;
   }

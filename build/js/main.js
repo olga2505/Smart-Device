@@ -25,12 +25,7 @@
     if (storageTel) {
       userTel.value = storageTel;
       userText.value = storageMessage;
-    } else {
-      userTel.focus();
     }
-    userText.focus();
-  } else {
-    userName.focus();
   }
 
   formFeedback.addEventListener('submit', function (evt) {
@@ -77,7 +72,6 @@
   valideteForms('.feedback__form', {name: {required: true}, tel: {required: true}});
   valideteForms('.popup__form', {namePopup: {required: true}, telPopup: {required: true}});
 }());
-
 
 'use strict';
 

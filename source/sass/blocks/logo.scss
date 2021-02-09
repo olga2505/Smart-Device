@@ -23,6 +23,12 @@
 
 .logo__text {
   margin-top: 6px;
+
+  @media (max-width: $mobile-width) {
+    &--header {
+      display: none;
+    }
+  }
 }
 
 .logo__text-big {

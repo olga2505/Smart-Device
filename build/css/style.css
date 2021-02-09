@@ -1770,13 +1770,16 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   outline-color: #ffffff;
-  color: #ffffff; }
+  color: #ffffff;
+  border-radius: 0; }
   .form__field input::-webkit-input-placeholder {
     color: #ffffff; }
   .form__field input::-moz-placeholder {
     color: #ffffff; }
   .form__field input:-moz-placeholder {
     color: #ffffff; }
+  .form__field input:focus {
+    outline: none; }
   .form__field input--text {
     width: 570px;
     height: 154px;
@@ -1807,13 +1810,16 @@ input[type="radio"].visually-hidden {
   border: none;
   outline-color: #ffffff;
   color: #ffffff;
-  resize: none; }
+  resize: none;
+  border-radius: 0; }
   .form__field textarea::-webkit-input-placeholder {
     color: #ffffff; }
   .form__field textarea::-moz-placeholder {
     color: #ffffff; }
   .form__field textarea:-moz-placeholder {
     color: #ffffff; }
+  .form__field textarea:focus {
+    outline: none; }
   @media (max-width: 1023px) {
     .form__field textarea {
       margin: 0 0 0 0;
