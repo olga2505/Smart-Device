@@ -83,14 +83,14 @@
 .page-header__mail {
   position: relative;
   margin: 15px 0 0 50px;
-  padding: 0;
+  padding: 0 0 0 14px;
   z-index: 20;
 
   &:hover {
     opacity: 0.5;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 }

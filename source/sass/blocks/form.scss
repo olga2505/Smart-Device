@@ -50,7 +50,7 @@
   }
 
   &:focus {
-    outline: none;
+    outline: 1px solid white;
   }
 
   &--text {
@@ -107,8 +107,9 @@
   }
 
   &:focus {
-    outline: none;
+    outline: 1px solid white;
   }
+
 
   @media (max-width: $tablet-width) {
     margin: 0 0 0 0;
