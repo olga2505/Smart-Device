@@ -17,7 +17,7 @@
   siteSectionsList.classList.add('form-hidden');
   contactsBlock.classList.add('form-hidden');
 
-  titleSection.addEventListener('click', function () {
+  var toggleTitleSection = function () {
     if (buttonSections.classList.contains('button-hidden')) {
       buttonSections.classList.remove('button-hidden');
       buttonSections.classList.add('button-show');
@@ -32,9 +32,9 @@
       buttonSections.classList.remove('button-show');
       siteSectionsList.classList.toggle('form-hidden');
     }
-  });
+  };
 
-  titleContacts.addEventListener('click', function () {
+  var toggleTitleContacts = function () {
     if (buttonContacts.classList.contains('button-hidden')) {
       buttonContacts.classList.remove('button-hidden');
       buttonContacts.classList.add('button-show');
@@ -48,6 +48,26 @@
       buttonContacts.classList.add('button-hidden');
       buttonContacts.classList.remove('button-show');
       contactsBlock.classList.toggle('form-hidden');
+    }
+  };
+
+  titleSection.addEventListener('click', function () {
+    toggleTitleSection();
+  });
+
+  titleSection.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 13) {
+      toggleTitleSection();
+    }
+  });
+
+  titleContacts.addEventListener('click', function () {
+    toggleTitleContacts();
+  });
+
+  titleContacts.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 13) {
+      toggleTitleContacts();
     }
   });
 })();

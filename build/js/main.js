@@ -190,6 +190,37 @@
 'use strict';
 
 (function () {
+  var titleSections = document.querySelector('.page-footer__site-sections h2');
+  var titleContacts = document.querySelector('.contacts__wrap h2');
+  var siteSectionsButton = document.querySelector('.site-sections__button');
+  var contactsButton = document.querySelector('.contacts__button');
+
+  siteSectionsButton.tabIndex = -1;
+  contactsButton.tabIndex = -1;
+
+  var checkWidthWindow = function (element) {
+    if (window.innerWidth <= 767) {
+      element.tabIndex = 0;
+    } else {
+      element.tabIndex = -1;
+    }
+  };
+
+  checkWidthWindow(titleSections);
+  checkWidthWindow(titleContacts);
+
+  window.addEventListener('resize', function () {
+    checkWidthWindow(titleSections);
+  });
+
+  window.addEventListener('resize', function () {
+    checkWidthWindow(titleContacts);
+  });
+})();
+
+'use strict';
+
+(function () {
 
   var titleSection = document.querySelector('.site-sections h2');
   var buttonSections = document.querySelector('.site-sections__button');
@@ -206,7 +237,7 @@
   siteSectionsList.classList.add('form-hidden');
   contactsBlock.classList.add('form-hidden');
 
-  titleSection.addEventListener('click', function () {
+  var toggleTitleSection = function () {
     if (buttonSections.classList.contains('button-hidden')) {
       buttonSections.classList.remove('button-hidden');
       buttonSections.classList.add('button-show');
@@ -221,9 +252,9 @@
       buttonSections.classList.remove('button-show');
       siteSectionsList.classList.toggle('form-hidden');
     }
-  });
+  };
 
-  titleContacts.addEventListener('click', function () {
+  var toggleTitleContacts = function () {
     if (buttonContacts.classList.contains('button-hidden')) {
       buttonContacts.classList.remove('button-hidden');
       buttonContacts.classList.add('button-show');
@@ -237,6 +268,26 @@
       buttonContacts.classList.add('button-hidden');
       buttonContacts.classList.remove('button-show');
       contactsBlock.classList.toggle('form-hidden');
+    }
+  };
+
+  titleSection.addEventListener('click', function () {
+    toggleTitleSection();
+  });
+
+  titleSection.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 13) {
+      toggleTitleSection();
+    }
+  });
+
+  titleContacts.addEventListener('click', function () {
+    toggleTitleContacts();
+  });
+
+  titleContacts.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 13) {
+      toggleTitleContacts();
     }
   });
 })();
