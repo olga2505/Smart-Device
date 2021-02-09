@@ -107,9 +107,15 @@ gulp.task('scripts', function () {
       .pipe(gulp.dest('build/js'));
 });
 
+gulp.task('scriptsVendor', function () {
+  return gulp.src('source/js/vendor_js/*.js')
+      .pipe(concat('vendor.js'))
+      .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'copyScss', 'sprite', 'html', 'images', 'webp', 'scripts'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'copyScss', 'sprite', 'html', 'images', 'webp', 'scripts', 'scriptsVendor'));
 gulp.task('start', gulp.series('build', 'server'));

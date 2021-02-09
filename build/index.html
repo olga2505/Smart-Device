@@ -135,11 +135,11 @@
             <form class="feedback__form form" method="post" action="https://echo.htmlacademy.ru">
               <p class="form__field form__field--name">
                 <label class="visually-hidden" for="feedback-name">Имя</label>
-                <input id="feedback-name" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
+                <input id="feedback-name" type="text" name="user-name" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" data-validate-field="name">
               </p>
               <p class="form__field form__field--tel">
                 <label class="visually-hidden" for="feedback-tel">Телефон</label>
-                <input id="feedback-tel" type="tel" name="user-tel" placeholder="Телефон">
+                <input id="feedback-tel" type="tel" name="user-tel" placeholder="Телефон" data-validate-field="tel">
               </p>
               <p class="form__field form__field--text">
                 <label class="visually-hidden" for="feedback-text">Ваш вопрос</label>
@@ -269,6 +269,7 @@
     </div>
     <div class="overlay overlay__hidden"></div>
     <script src="https://unpkg.com/imask"></script>
+    <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

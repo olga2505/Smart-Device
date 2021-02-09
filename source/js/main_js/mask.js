@@ -9,11 +9,24 @@
   };
 
   inputTelPopup.addEventListener('focus', function () {
-    var maskPopup = IMask(inputTelPopup, maskOptions);
+    IMask(inputTelPopup, maskOptions);
   });
 
   feedbackTel.addEventListener('focus', function () {
-    var maskFeedback = IMask(feedbackTel, maskOptions);
+    IMask(feedbackTel, maskOptions);
   });
 
+
+  var valideteForms = function (selector, rules) {
+    new window.JustValidate(selector, {
+      rules: rules,
+      submitHandler: function (form) {
+
+      }
+    });
+  }
+
+  valideteForms('.feedback__form', {name: {required: true}, tel: {required: true}});
+
 }());
+
