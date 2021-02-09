@@ -13,21 +13,15 @@
   var userTexPopupt = popup.querySelector('[name=feedback-question-popup]');
   var checkboxPopup = popup.querySelector('.popup__consent input');
 
-  var formFeedback = document.querySelector('.feedback__form');
-  var userName = formFeedback.querySelector('[name=user-name]');
-  var userTel = formFeedback.querySelector('[name=user-tel]');
-  var userText = formFeedback.querySelector('[name=feedback-question]');
-  var checkboxForm = formFeedback.querySelector('.form__consent input');
-
   var isStorageSupport = true;
-  var storageName = '';
-  var storageTel = '';
-  var storageMessage = '';
+  var storageNamePopup = '';
+  var storageTelPopup = '';
+  var storageMessagePopup = '';
 
   try {
-    storageName = localStorage.getItem('userNamePopup');
-    storageTel = localStorage.getItem('userTelPopup');
-    storageMessage = localStorage.getItem('userTextPopup');
+    storageNamePopup = localStorage.getItem('userNamePopup');
+    storageTelPopup = localStorage.getItem('userTelPopup');
+    storageMessagePopup = localStorage.getItem('userTextPopup');
   } catch (err) {
     isStorageSupport = false;
   }
@@ -38,11 +32,11 @@
     popup.classList.remove('popup__hidden');
     overlay.classList.remove('overlay__hidden');
 
-    if (storageName) {
-      userNamePopup.value = storageName;
-      if (storageTel) {
-        userTelPopup.value = storageTel;
-        userTexPopupt.value = storageMessage;
+    if (storageNamePopup) {
+      userNamePopup.value = storageNamePopup;
+      if (storageTelPopup) {
+        userTelPopup.value = storageTelPopup;
+        userTexPopupt.value = storageMessagePopup;
       } else {
         userTelPopup.focus();
       }
@@ -89,17 +83,4 @@
       closeModal();
     });
   }
-
-  formFeedback.addEventListener('submit', function (evt) {
-    if (!userName.value || !userTel.value || !checkboxForm.checked) {
-      evt.preventDefault();
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem('userNamePopup', userName.value);
-        localStorage.setItem('userTelPopup', userTel.value);
-        localStorage.setItem('userTextPopup', userText.value);
-        formFeedback.submit();
-      }
-    }
-  });
 })();
