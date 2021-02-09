@@ -35,6 +35,7 @@
   border: none;
   outline-color: #ffffff;
   color: #ffffff;
+  border-radius: 0;
 
   &::-webkit-input-placeholder {
     color: #ffffff;
@@ -46,6 +47,10 @@
 
   &:-moz-placeholder {
     color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &--text {
@@ -87,6 +92,7 @@
   outline-color: #ffffff;
   color: #ffffff;
   resize: none;
+  border-radius: 0;
 
   &::-webkit-input-placeholder {
     color: #ffffff;
@@ -98,6 +104,10 @@
 
   &:-moz-placeholder {
     color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   @media (max-width: $tablet-width) {

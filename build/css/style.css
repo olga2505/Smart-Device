@@ -1300,6 +1300,14 @@ input[type="radio"].visually-hidden {
     left: 0;
     top: 50%;
     background-color: #c4c4c4; }
+  .button-hidden::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 16px;
+    left: 50%;
+    top: 0;
+    background-color: #c4c4c4; }
 
 .button-show {
   position: absolute; }
@@ -1318,14 +1326,9 @@ input[type="radio"].visually-hidden {
     left: 0;
     top: 50%;
     background-color: #c4c4c4; }
-  .button-show::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 16px;
-    left: 50%;
-    top: 0;
-    background-color: #c4c4c4; }
+
+.no-js {
+  display: none; }
 
 .about-company {
   position: relative;
@@ -1888,15 +1891,15 @@ input[type="radio"].visually-hidden {
   background-size: contain; }
 
 @media (max-width: 767px) {
-  .form-hidden {
-    display: none; } }
-
-@media (max-width: 767px) {
   .form-show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 214px; } }
+
+@media (max-width: 767px) {
+  .form-hidden {
+    display: none; } }
 
 .popup {
   position: absolute;

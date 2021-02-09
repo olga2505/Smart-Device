@@ -248,11 +248,11 @@
         <form class="popup__form form" method="post" action="https://echo.htmlacademy.ru">
           <p class="form__field form__field--name popup__field">
             <label class="visually-hidden" for="feedback-name-popup">Имя</label>
-            <input id="feedback-name-popup" type="text" name="user-name-popup" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
+            <input id="feedback-name-popup" type="text" name="user-name-popup" placeholder="Имя" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" data-validate-field="namePopup">
           </p>
           <p class="form__field form__field--tel popup__field">
             <label class="visually-hidden" for="feedback-tel-popup">Телефон</label>
-            <input id="feedback-tel-popup" type="tel" name="user-tel-popup" placeholder="Телефон">
+            <input id="feedback-tel-popup" type="tel" name="user-tel-popup" placeholder="Телефон" data-validate-field="telPopup">
           </p>
           <p class="form__field form__field--text popup__field">
             <label class="visually-hidden" for="feedback-text-popup">Ваш вопрос</label>

@@ -70,13 +70,12 @@
     new window.JustValidate(selector, {
       rules: rules,
       submitHandler: function (form) {
-
       }
     });
   }
 
   valideteForms('.feedback__form', {name: {required: true}, tel: {required: true}});
-
+  valideteForms('.popup__form', {namePopup: {required: true}, telPopup: {required: true}});
 }());
 
 
