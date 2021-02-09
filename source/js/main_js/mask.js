@@ -8,8 +8,11 @@
     lazy: false
   };
 
-  inputTelPopup.addEventListener('click', function () {
+  inputTelPopup.addEventListener('focus', function () {
     var maskPopup = IMask(inputTelPopup, maskOptions);
+  });
+
+  feedbackTel.addEventListener('focus', function () {
     var maskFeedback = IMask(feedbackTel, maskOptions);
   });
 
