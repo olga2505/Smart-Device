@@ -18,6 +18,16 @@
     top: 50%;
     background-color: $batton-show;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 16px;
+    left: 50%;
+    top: 0;
+    background-color: $batton-show;
+  }
 }
 
 .button-show {
@@ -40,14 +50,8 @@
     top: 50%;
     background-color: $batton-show;
   }
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 16px;
-    left: 50%;
-    top: 0;
-    background-color: $batton-show;
-  }
+.no-js {
+  display: none;
 }

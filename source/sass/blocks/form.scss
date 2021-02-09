@@ -190,15 +190,15 @@
   background-size: contain;
 }
 
-.form-hidden {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
 .form-show {
   @media (max-width: $mobile-width) {
     display: flex;
     width: 214px;
+  }
+}
+
+.form-hidden {
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
