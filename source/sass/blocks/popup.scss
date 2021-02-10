@@ -84,6 +84,10 @@
   left: -45px;
 }
 
+.popup__consent input:focus + label::before {
+  border: 2px solid #ffffff;
+}
+
 .popup__close {
   position: absolute;
   border: none;

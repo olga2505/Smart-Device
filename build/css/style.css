@@ -1917,6 +1917,9 @@ input[type="radio"].visually-hidden {
     left: -33px;
     border: 1px solid #ffffff; }
 
+.form__consent input:focus + label::before {
+  border: 2px solid #ffffff; }
+
 .form__consent input:checked + label::after {
   position: absolute;
   content: "";
@@ -2011,6 +2014,9 @@ input[type="radio"].visually-hidden {
 
 .popup__consent input:checked + label::after {
   left: -45px; }
+
+.popup__consent input:focus + label::before {
+  border: 2px solid #ffffff; }
 
 .popup__close {
   position: absolute;
