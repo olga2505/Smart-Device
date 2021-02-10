@@ -1045,6 +1045,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .site-sections {
       max-width: 100%;
+      width: 100%;
       position: relative;
       margin-bottom: 2px; } }
 
