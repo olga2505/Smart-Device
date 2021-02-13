@@ -34,8 +34,8 @@
             </svg>
             <span>+7 (495) 000 52 52</span>
           </a>
-          <a class="page-header__call button" href="form.html">Заказать звонок</a>
         </nav>
+        <a class="page-header__call button" href="form.html">Заказать звонок</a>
       </div>
     </header>
     <main class="page-main">
@@ -147,7 +147,7 @@
               </p>
               <button class="form__button button" type="submit">Задать вопрос</button>
               <p class="form__consent">
-                <input class="visually-hidden" id="user-consent" type="checkbox" name="user-consent" value="consent" checked>
+                <input class="visually-hidden" id="user-consent" type="checkbox" name="user-consent" value="consent" data-validate-field="checkboxForm" checked>
                 <label for="user-consent">Я согласен на обработку  персональных данных</label>
               </p>
             </form>
@@ -264,7 +264,7 @@
           </p>
           <button class="form__button button popup__button" type="submit">Отправить</button>
           <p class="form__consent popup__consent">
-            <input class="visually-hidden" id="popup-checkbox" type="checkbox" name="user-consent" value="consent" checked>
+            <input class="visually-hidden" id="popup-checkbox" type="checkbox" name="user-consent" value="consent" data-validate-field="checkboxPopup"  checked>
             <label for="popup-checkbox">Я согласен на обработку  персональных данных</label>
           </p>
         </form>

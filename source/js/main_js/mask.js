@@ -24,6 +24,6 @@
     });
   }
 
-  valideteForms('.feedback__form', {name: {required: true}, tel: {required: true}});
-  valideteForms('.popup__form', {namePopup: {required: true}, telPopup: {required: true}});
+  valideteForms('.feedback__form', {name: {required: true}, tel: {required: true}, checkboxForm: {required: true}});
+  valideteForms('.popup__form', {namePopup: {required: true}, telPopup: {required: true}, checkboxPopup: {required: true}});
 }());

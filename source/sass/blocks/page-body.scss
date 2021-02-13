@@ -1,5 +1,9 @@
 .page-body {
   min-width: $mobile-min-width;
+
+  &--form {
+    height: 100vh;
+  }
 }
 
 .page-body--no-scroll {

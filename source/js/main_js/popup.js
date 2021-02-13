@@ -46,6 +46,12 @@
     }
   });
 
+  var closeModal = function () {
+    popup.classList.add('popup__hidden');
+    overlay.classList.add('overlay__hidden');
+    pageBody.classList.remove('page-body--no-scroll');
+  };
+
   formPopup.addEventListener('submit', function (evt) {
     if (!userNamePopup.value || !userTelPopup.value || !checkboxPopup.checked) {
       evt.preventDefault();
@@ -54,15 +60,10 @@
         localStorage.setItem('userNamePopup', userNamePopup.value);
         localStorage.setItem('userTelPopup', userTelPopup.value);
         localStorage.setItem('userTextPopup', userTexPopupt.value);
+        closeModal();
       }
     }
   });
-
-  var closeModal = function () {
-    popup.classList.add('popup__hidden');
-    overlay.classList.add('overlay__hidden');
-    pageBody.classList.remove('page-body--no-scroll');
-  };
 
   popupClose.addEventListener('click', function () {
     closeModal();
